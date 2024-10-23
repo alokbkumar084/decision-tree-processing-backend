@@ -1,31 +1,53 @@
+
+# Decision Tree Processing Backend
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-You have installed Node.js and npm (Node Package Manager).
-You have a code editor, preferably Visual Studio Code.
+- You have installed and npm (Node Package Manager).
 
 ## Installation
 
-1. **Clone the repository:**
+1. Clone the repository:
 
+   ```bash
    git clone https://github.com/alokbkumar084/decision-tree-processing-backend.git
-   
-2. **Navigate to the project directory:**
-   
-   cd decision-tree-processing-backend
-   
-3. **Install the dependencies:**
+   ```
 
+2. Navigate to the project directory:
+
+   ```bash
+   cd decision-tree-processing-backend
+   ```
+
+3. Install the dependencies:
+
+   ```bash
    npm install
-   
+   ```
+
 ## Running the Application
 
-To run the application locally, use the following command:  
+To run the application locally, use the following command:
 
+```bash
 npm start
+```
+## Note -
+Make sure your server running on the Port "localhost:3000"
 
-4. **Add this json data on the postman to check the conditons :**
+## Testing with Postman
+
+To check the conditions using Postman, 
+
+Hit the POST request with below URL
+
+URL - http://localhost:3000/execute-tree
+
+send the following JSON data to the appropriate:
+
+```json
 {
   "type": "Condition",
   "expression": "new Date().getFullYear() === 2024",
@@ -39,3 +61,4 @@ npm start
     "receiver": "receiver@example.com"
   }
 }
+```
