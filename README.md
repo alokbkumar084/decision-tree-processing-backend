@@ -24,3 +24,18 @@ You have a code editor, preferably Visual Studio Code.
 To run the application locally, use the following command:  
 
 npm start
+
+4. **Add this json data on the postman to check the conditons :**
+{
+  "type": "Condition",
+  "expression": "new Date().getFullYear() === 2024",
+  "trueAction": {
+    "type": "SendSMS",
+    "phoneNumber": "1234567890"
+  },
+  "falseAction": {
+    "type": "SendEmail",
+    "sender": "sender@example.com",
+    "receiver": "receiver@example.com"
+  }
+}
